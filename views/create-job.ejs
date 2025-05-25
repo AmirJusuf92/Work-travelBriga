@@ -1,0 +1,13 @@
+<%- include('partials/navbar') %>
+<div class="jobCont">
+    <div class="job-form">
+<h2>Create Job Post</h2>
+<form method="POST" action="/create-job">
+  <input name="title" placeholder="Naziv posla" required>
+  <textarea name="description" placeholder="opis posla" required></textarea>
+  <input name="location" placeholder="Lokacija">
+  <button type="submit">Objavi</button>
+</form>
+    </div>
+</div>
+<%- include('partials/footer') %>

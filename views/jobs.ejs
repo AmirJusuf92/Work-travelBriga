@@ -1,0 +1,18 @@
+<%- include('partials/navbar') %>
+<div class="poso-wrap">
+<div class="poso">
+<h2>Dostupni Poslovi</h2>
+<ul>
+  <% jobs.forEach(job => { %>
+    <li>
+      <strong><%= job.title %></strong> - <%= job.location %><br>
+      <%= job.description %><br>
+      <a href="/jobs/<%= job.id %>/apply">Apliciraj</a>
+    </li>
+  <% }); %>
+</ul>
+</div>
+</div>
+<%- include('partials/footer') %>
+
+
