@@ -23,7 +23,9 @@
 <table id="fileTable"><th>Ime</th><th>Fajl</th>
   <% files.forEach(file => { %>
     <tr>
-    <td><%= file.first_name %> <%= file.last_name %></td> <td><a href="/download/<%= file.filename %>"><%= file.filename %></a></td>
+    <td><%= file.first_name %> <%= file.last_name %></td> <td><a href="<%= file.file_url %>" 
+       class="btn btn-sm btn-info" 
+       target="_blank"><%= file.filename %></a></td>
   </tr><% }) %>
 </table>
 </div>

@@ -7,7 +7,9 @@
 <h3>Tvoje objavljene datoteke</h3>
 <ul>
   <% files.forEach(file => { %>
-    <li><a href="/download/<%= file.filename %>"><%= file.filename %></a></li>
+    <li><a href="<%= file.file_url %>" 
+       class="btn btn-sm btn-info" 
+       target="_blank"><%= file.filename %></a></li>
   <% }) %>
 </ul>
 </div>
